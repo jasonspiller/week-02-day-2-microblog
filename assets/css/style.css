@@ -50,7 +50,7 @@ header h1 {
 main {
 	box-sizing: border-box;
 	width: 80%;
-	margin: 10rem auto 5rem;
+	margin: 8.5rem auto 5rem;
 	padding: 1rem 1rem 2rem;
 	background: rgba(255,255,255,0.85);
 	text-align: center;
@@ -92,10 +92,10 @@ button {
 	width: 100%;
 	margin: 1rem 0;
 	border: 0;
-	padding: 1rem;
+	padding: 1.5rem;
 	background: #0EACC2;
 	color: #fff;
-	font-style: 2rem;
+	font-size: 1.25rem;
 	text-transform: uppercase;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
 	letter-spacing: 1rem;
