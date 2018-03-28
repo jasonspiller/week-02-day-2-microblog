@@ -29,7 +29,7 @@ h1, h2, h3 {
 }
 
 header, footer {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	bottom: auto;
 	z-index: 1;
@@ -49,15 +49,19 @@ header h1 {
 
 main {
 	box-sizing: border-box;
-	width: 100%;
-	margin: 10rem 0 5rem;
-	padding: 1rem 20%;
+	width: 80%;
+	margin: 10rem auto 5rem;
+	padding: 1rem 1rem 2rem;
 	background: rgba(255,255,255,0.85);
 	text-align: center;
 }
 
 form h2 {
 	margin: 1rem 0 0;
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
 }
 
 form input {
@@ -70,8 +74,15 @@ form input {
 	border: 0;
 	padding: 0 1.5rem;
 	background: #EEEFF4;
+	color: #494B57;
 	line-height: 4rem;
 	text-align: center;
+}
+
+.form-control:focus
+{
+  border-color: #0EACC2;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(14, 172, 194, 0.5);
 }
 
 button {
@@ -80,7 +91,36 @@ button {
 	box-sizing: border-box;
 	width: 100%;
 	margin: 1rem 0;
+	border: 0;
 	padding: 1rem;
+	background: #0EACC2;
+	color: #fff;
+	font-style: 2rem;
+	text-transform: uppercase;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+	letter-spacing: 1rem;
+}
+
+button:focus
+{
+  border-color: #c7c8ca;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(99, 100, 102, 0.75);
+}
+
+article {
+	display: block;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 1rem 0;
+	padding: 1rem;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	text-align: center;
+}
+
+article:first-child {
+	margin-top: 3rem;
 }
 
 footer {
@@ -91,7 +131,7 @@ footer {
 
 .copyright, .photo-credit {
 	float: left;
-	margin: -0.1rem 0 0;
+	margin: -0.05rem 0 0;
 	padding: 0 2rem 2rem;
 	font-size: .85rem;
 	line-height:
